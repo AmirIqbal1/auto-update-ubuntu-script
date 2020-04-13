@@ -1,7 +1,11 @@
 # auto-update-ubuntu-script
 This script auto updates Ubuntu OS.
 
-Run as root "chmod +x update.sh", then run the command "./update.sh"
+Run as root!
+
+# chmod +x update.sh
+
+# ./update.sh
 
 This script will auto reconfigure dpkg if anything is wrong with it, update, upgrade and 
 perform an "install -f" as well as, autoclean and autoremove any packages & downloaded files/ dependencies it doesn't need. 

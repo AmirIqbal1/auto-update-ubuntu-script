@@ -1,5 +1,5 @@
 # auto-update-ubuntu-script
-This script auto updates Ubuntu 18.04 packages (hasn't been tested with 20.04 yet).
+This script auto updates Ubuntu 20.04 packages (hasn't been tested with 20.04 yet).
 
 Run as root!
 

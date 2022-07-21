@@ -5,4 +5,9 @@ apt upgrade -y &&
 apt install -f &&
 apt clean &&
 apt autoclean &&
-apt autoremove -y
+apt autoremove -y &&
+
+#remove bottom lines for auto reboot is needed 
+#if [ -f /var/run/reboot-required ]; then
+#  reboot
+#fi

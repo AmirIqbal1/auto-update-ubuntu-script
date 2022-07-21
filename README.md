@@ -12,4 +12,4 @@ perform an "install -f" as well as, autoclean and autoremove any packages & down
 
 It will also clean bash history. 
 
-Great script for Ubuntu servers.
+Great script for Ubuntu servers. Has auto reboot features, you got to edit out comments to enable it.

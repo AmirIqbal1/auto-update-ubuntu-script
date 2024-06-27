@@ -1,16 +1,23 @@
 # auto-update-ubuntu-script
-This script auto updates Debian based distros.
 
-Run as root!
+This script automatically updates Debian-based distros.
 
+## Instructions
+
+To execute this script, run the following commands as root:
+
+```bash
 chmod +x update.sh
 ./update.sh
+```
 
-This script will auto reconfigure dpkg if anything is wrong with it, update, upgrade and 
-perform an "install -f" as well as, autoclean and autoremove any packages & downloaded files/ dependencies it doesn't need. 
+## Features
 
-It will also clean bash history. 
-Also updates Flatpak packages (please uncomment line).
+- Automatically reconfigures `dpkg` if anything is wrong.
+- Updates and upgrades the system.
+- Performs `apt install -f` to fix broken dependencies.
+- Runs `apt autoclean` and `apt autoremove` to clean up unnecessary packages and downloaded files.
+- Cleans bash history.
+- Updates Flatpak packages (uncomment the relevant line to enable this).
 
-Great script for Ubuntu servers. Has auto reboot features, you got to edit out comments to enable it.
-
+Great script for Ubuntu servers. It includes auto-reboot features, which you can enable by editing out the comments.

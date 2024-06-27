@@ -2,6 +2,7 @@
 dpkg --configure -a &&
 apt update &&
 apt upgrade -y &&
+#flatpak update -y &&
 apt install -f &&
 apt clean &&
 apt autoclean &&

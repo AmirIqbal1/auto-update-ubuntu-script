@@ -1,4 +1,4 @@
-# auto-update-ubuntu-script
+# auto-update-script
 
 This script automatically updates Debian-based distros.
 

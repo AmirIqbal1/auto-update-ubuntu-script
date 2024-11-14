@@ -27,13 +27,13 @@ if [ $? -ne 0 ]; then
   exit 1
 fi
 
-# Uncomment the following lines to update Flatpak packages
-# echo "Updating Flatpak packages..."
-# flatpak update -y
-# if [ $? -ne 0 ]; then
-#   echo "Flatpak update failed."
-#   exit 1
-# fi
+# Uncomment the following lines to stop update of Flatpak packages
+ echo "Updating Flatpak packages..."
+ flatpak update -y
+ if [ $? -ne 0 ]; then
+   echo "Flatpak update failed."
+   exit 1
+ fi
 
 # Fix broken dependencies
 echo "Fixing broken dependencies..."
@@ -55,8 +55,8 @@ fi
 
 # Auto reboot if needed
 if [ -f /var/run/reboot-required ]; then
-  echo " - Reboot required. Rebooting now..."
-  reboot
+  echo " - Reboot required. "
+#  reboot
 else
   echo "System update completed successfully. No reboot required."
 fi
